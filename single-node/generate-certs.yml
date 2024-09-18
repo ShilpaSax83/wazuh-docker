@@ -10,3 +10,5 @@ services:
       - ./config/wazuh_indexer_ssl_certs/:/certificates/
       - ./config/certs.yml:/config/certs.yml
 
+environment:
+  - HTTP_PROXY=YOUR_PROXY_ADDRESS_OR_DNS
